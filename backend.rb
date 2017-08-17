@@ -14,7 +14,6 @@ class Torre
     @res_times = []
   end
 
-  # TODO: consider if the site is down
   def http_res
     Net::HTTP.get_response(URI(@uri))
   end
@@ -44,7 +43,7 @@ end
 # MAIN
 #
 t = 4
-gitlab = 'https://about.gitlab.com/'
+gitlab = 'https://aboutf.gitlab.com/'
 tensec = Torre.new(gitlab, t)
 tensec.gather_responses
 puts tensec.res_times
