@@ -3,7 +3,7 @@
 require 'net/http'
 require 'timeout'
 require 'uri'
-puts "test"
+puts "test2"
 # Torre class, get http response over a custom time.
 # get HTTP response times over XX sec from your location to website XX
 class Torre
