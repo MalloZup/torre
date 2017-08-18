@@ -10,3 +10,9 @@ torre is a pillar for inspecting web-sites.
 ```console
 bunlder install
 ```
+
+### Examples:
+
+```console
+ruby example.rb
+```
