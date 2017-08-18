@@ -36,13 +36,3 @@ class Torre
 
   private :res_page
 end
-
-# 300 is 5 min
-#
-# MAIN
-#
-t = 4
-gitlab = 'https://about.gitlab.com/'
-tensec = Torre.new(gitlab, t)
-tensec.gather_responses
-puts tensec.res_times
