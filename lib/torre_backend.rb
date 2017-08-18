@@ -3,6 +3,7 @@
 require 'net/http'
 require 'timeout'
 require 'uri'
+require_relative 'torre_database'
 
 # Torre class, get http response over a custom time.
 # get HTTP response times over XX sec from your location to website XX
@@ -34,5 +35,14 @@ class Torre
     puts "#{@to_test_time} seconds elapsed."
   end
 
+  # database specific method
+  def res_times_todb
+    TorreDB.new('sqlite3', 'torre.db')
+    @res_times.each do |value|
+      HttpRes.create(real_time: value, site_up: true) unless value == false
+      HttpRes.create(real_time: 0, site_up: false) if value == false
+    end
+    p HttpRes.all
+  end
   private :res_page
 end
