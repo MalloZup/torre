@@ -16,3 +16,5 @@ bunlder install
 ```console
 ruby example.rb
 ```
+
+![torre](doc/faro.jpg)
