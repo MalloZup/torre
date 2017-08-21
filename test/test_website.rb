@@ -3,6 +3,7 @@ require 'webrick'
 require 'fileutils'
 
 # this class test the simply case that we have a website up and running
+# and a test if we have a down website.
 class WebSiteTests < Minitest::Test
   def test_siteonline
     assert_equal(true, true)
