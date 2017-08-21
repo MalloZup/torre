@@ -8,7 +8,7 @@ require_relative 'lib/torre_backend.rb'
 # MAIN example
 #
 
-t = 300
+t = 3
 gitlab = 'https://about.gitlab.com/'
 test0 = Torre.new(gitlab, t)
 test0.gather_responses
