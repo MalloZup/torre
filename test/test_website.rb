@@ -47,7 +47,5 @@ class WebSiteTests < Minitest::Test
     test2.res_times.each do |resp|
       assert(resp == false)
     end
-    tes2t.res_times_todb
-    db_check_site(false)
   end
 end
