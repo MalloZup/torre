@@ -23,7 +23,7 @@ class WebSiteTests < Minitest::Test
     hres.each do |elem|
       assert(elem.site_up == ck)
     end
-    FileUtils.rm(Dir.pwd + 'torre.db')
+    FileUtils.rm(Dir.pwd + '/torre.db')
   end
 
   def test_online_site
