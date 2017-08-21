@@ -4,8 +4,6 @@ require 'sinatra'
 require 'haml'
 
 get '/' do
-  'Welcome to torre'
-  @test0 = "fo"
-  @test1 = "fobarreo"
-  haml: :test0, :test1
+  @test0 = 'Welcome to torre'
+  haml :index
 end
