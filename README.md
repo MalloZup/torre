@@ -17,4 +17,10 @@ bunlder install
 ruby example.rb
 ```
 
+Time and webpage are param., see the code in example.rb for more info.
+
+After the 5 min, all results will be served on
+`http://localhost:4567/`
+
+
 ![torre](doc/faro.jpg)
