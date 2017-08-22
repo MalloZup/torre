@@ -8,19 +8,17 @@ torre is a pillar for inspecting web-sites.
 ## install
 
 ```console
-bunlder install
+bundler install
 ```
 
-### Examples:
+### RUN:
 
 ```console
 ruby example.rb
 ```
 
-Time and webpage are param., see the code in example.rb for more info.
-
 After the 5 min, all results will be served on
 `http://localhost:4567/`
 
-
+Time and webpage are param., see the code in example.rb for more info.
 ![torre](doc/faro.jpg)
