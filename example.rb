@@ -2,9 +2,7 @@
 
 require 'sinatra'
 require 'haml'
-require 'time'
 require 'json'
-require 'fileutils'
 require_relative 'lib/torre_backend.rb'
 require_relative 'lib/torre_database.rb'
 
